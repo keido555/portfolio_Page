@@ -1,27 +1,20 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import { Header } from "src/components/layout/Header";
-import imageHome from "src/Image/5124911_s.jpg";
+import { Top } from "src/components/block/Top";
+import { Introduction } from "src/components/block/Introduction";
 
 const Home: NextPage = () => {
   return (
-    <div className="m-auto max-w-screen-2xl">
+    <div className="m-auto max-w-screen-xl">
       <Header />
       <main>
-        <section className="mt-8 flex">
-          <div className="flex-none"></div>
-          <div className="... ml-12 mt-8 w-64 flex-auto">
-            <h1 className="text-8xl">Warashibe</h1>
-            <h2 className="mt-8 text-2xl">ポートフォリオページです</h2>
-          </div>
-          <div
-            className="... mr-8 w-48 flex-auto"
-            // style={{ position: "relative", right: "0", width: "560px" }}
-          >
-            <Image src={imageHome} layout="responsive" alt="HomeImg" />
-          </div>
+        <section>
+          <Top />
         </section>
-        <h2>Home</h2>
+        <section>
+          <Introduction />
+        </section>
       </main>
     </div>
   );
