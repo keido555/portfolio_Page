@@ -8,7 +8,7 @@ function SampleNextArrow(props: any) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", color: "black" }}
+      style={{ ...style, display: "block", background: "black" }}
       onClick={onClick}
     />
   );
@@ -19,7 +19,7 @@ function SamplePrevArrow(props: any) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", color: "black" }}
+      style={{ ...style, display: "block", background: "black" }}
       onClick={onClick}
     />
   );
@@ -48,23 +48,23 @@ export default class SimpleSlider extends Component {
         <div className="mt-8 flex justify-center">
           <div style={{ width: "calc(100% - 50px)" }}>
             <Slider {...settings}>
-              <div className=" h-16 w-8 bg-cyan-300">
-                <h3>1</h3>
+              <div className=" h-36 w-8 bg-cyan-300">
+                <h3 className="text-center">1</h3>
               </div>
-              <div className=" h-8 w-8 bg-cyan-400">
-                <h3>2</h3>
+              <div className=" h-36 w-8 bg-cyan-400">
+                <h3 className="text-center">2</h3>
               </div>
-              <div className=" h-8 w-8 bg-cyan-500">
-                <h3>3</h3>
+              <div className=" h-36 w-8 bg-cyan-500">
+                <h3 className="text-center">3</h3>
               </div>
-              <div className=" h-8 w-8 bg-cyan-600">
-                <h3>4</h3>
+              <div className=" h-36 w-8 bg-cyan-600">
+                <h3 className="text-center">4</h3>
               </div>
-              <div className=" h-8 w-8 bg-cyan-700">
-                <h3>5</h3>
+              <div className=" h-36 w-8 bg-cyan-700">
+                <h3 className="text-center">5</h3>
               </div>
-              <div className=" h-8 w-8 bg-cyan-800">
-                <h3>6</h3>
+              <div className=" h-36 w-8 bg-cyan-800">
+                <h3 className="text-center">6</h3>
               </div>
             </Slider>
           </div>
