@@ -3,6 +3,10 @@ import { SiJavascript } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { SiJava } from "react-icons/si";
 import { SiPython } from "react-icons/si";
+import { SiPhp } from "react-icons/si";
+import { SiSwift } from "react-icons/si";
+import { SiCsharp } from "react-icons/si";
+
 import { AiFillStar } from "react-icons/ai";
 
 type Props = {
@@ -80,6 +84,53 @@ export const Skill = () => {
             <p>Level</p>
             <div className="flex justify-center text-xl">
               <AiFillStar className="text-xl text-yellow-400" />
+              <AiFillStar className="text-xl text-yellow-400" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 二列目 */}
+      <div className="my-16 mx-auto flex max-w-4xl justify-around">
+        {/* PHP */}
+        <div className="h-60 w-40 bg-zinc-200 shadow-2xl">
+          <SiPhp
+            className="relative top-4 mx-auto rounded-full bg-white text-violet-400"
+            size="6rem"
+          />
+          <p className="mt-6 text-center text-2xl">PHP</p>
+          <div className="mt-4 text-center">
+            <p>Level</p>
+            <div className="flex justify-center text-xl">
+              <AiFillStar className="text-xl text-yellow-400" />
+              <AiFillStar className="text-xl text-yellow-400" />
+            </div>
+          </div>
+        </div>
+        {/* Swift */}
+        <div className="h-60 w-40 bg-zinc-200 shadow-2xl">
+          <SiSwift
+            className="relative top-4 mx-auto rounded-full bg-orange-500 text-white"
+            size="6rem"
+          />
+          <p className="mt-6 text-center text-2xl">Swift</p>
+          <div className="mt-4 text-center">
+            <p>Level</p>
+            <div className="flex justify-center text-xl">
+              <AiFillStar className="text-xl text-yellow-400" />
+            </div>
+          </div>
+        </div>
+        {/* C# */}
+        <div className="h-60 w-40 bg-zinc-200 shadow-2xl">
+          <SiCsharp
+            className="relative top-4 mx-auto rounded-full bg-white bg-white text-green-600"
+            size="6rem"
+          />
+          <p className="mt-6 text-center text-2xl">C#</p>
+          <div className="mt-4 text-center">
+            <p>Level</p>
+            <div className="flex justify-center text-xl">
               <AiFillStar className="text-xl text-yellow-400" />
             </div>
           </div>
